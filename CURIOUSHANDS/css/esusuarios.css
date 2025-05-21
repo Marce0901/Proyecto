@@ -1,0 +1,131 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap');
+
+body {
+  margin: 0;
+  font-family: 'Poppins', sans-serif;
+  background-color: #f0f8f6;
+}
+
+/* CONTENEDOR DE LA PÁGINA */
+.container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  padding: 40px;
+  background-color: #e6f4ef;
+}
+
+/* FORMULARIO */
+form {
+  background-color: #ffffff;
+  border-radius: 16px;
+  padding: 30px;
+  width: 420px;
+  box-shadow: 0 6px 18px rgba(0, 0, 0, 0.08);
+  transition: transform 0.2s ease;
+}
+
+form:hover {
+  transform: scale(1.01);
+}
+
+/* TÍTULO */
+h2 {
+  font-size: 24px;
+  color: #2c998c;
+  text-align: center;
+  margin-bottom: 25px;
+  font-weight: 600;
+}
+
+/* CAMPOS DEL FORMULARIO */
+input[type="text"],
+input[type="email"],
+input[type="tel"] {
+  width: 100%;
+  padding: 14px;
+  margin-bottom: 18px;
+  border-radius: 10px;
+  border: 1px solid #cfdcd9;
+  font-size: 15px;
+  color: #333;
+  background-color: #f9fdfc;
+  transition: box-shadow 0.2s;
+}
+
+input:focus {
+  outline: none;
+  border-color: #2c998c;
+  box-shadow: 0 0 8px rgba(44, 153, 140, 0.3);
+}
+
+/* BOTÓN DE ENVIAR */
+button[type="submit"] {
+  background-color: #2c998c;
+  color: white;
+  padding: 14px;
+  border: none;
+  border-radius: 10px;
+  font-size: 16px;
+  width: 100%;
+  cursor: pointer;
+  font-weight: bold;
+  transition: background-color 0.3s ease, transform 0.2s ease;
+}
+
+button[type="submit"]:hover {
+  background-color: #1e6f63;
+  transform: scale(1.03);
+}
+
+/* ENLACE DE ELIMINAR USUARIO */
+a {
+  text-decoration: none;
+  color: #ff4d4d;
+  font-weight: bold;
+  display: inline-block;
+  margin-top: 15px;
+  text-align: center;
+  transition: color 0.2s ease;
+}
+
+a:hover {
+  color: #e04343;
+}
+
+/* BOTÓN DE VOLVER */
+.boton-volver {
+  background-color: #c3e8dd;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 10px;
+  color: #333;
+  font-size: 16px;
+  display: block;
+  width: 100%;
+  margin-top: 20px;
+  cursor: pointer;
+  font-weight: bold;
+  transition: background-color 0.3s ease;
+}
+
+.boton-volver:hover {
+  background-color: #b0d9cc;
+}
+
+/* MENSAJES */
+p {
+  font-size: 16px;
+  color: #333;
+  text-align: center;
+  margin-top: 20px;
+}
+
+p.success {
+  color: #28a745;
+}
+
+p.error {
+  color: #dc3545;
+}

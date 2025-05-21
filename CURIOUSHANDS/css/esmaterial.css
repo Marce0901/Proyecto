@@ -1,0 +1,161 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap');
+
+body {
+  margin: 0;
+  font-family: 'Poppins', sans-serif;
+  background-color: #f0f8f6;
+}
+
+/* CONTENEDOR GENERAL */
+.material-container {
+  display: flex;
+  height: 100vh;
+}
+
+/* SIDEBAR */
+.sidebar {
+  width: 220px;
+  background-color: #c3e8dd;
+  padding: 30px 20px;
+  box-shadow: 2px 0 10px rgba(0, 0, 0, 0.05);
+}
+
+.logo-sidebar {
+  width: 100px;
+  margin-bottom: 30px;
+}
+
+.sidebar ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.sidebar ul li {
+  margin: 25px 0;
+}
+
+.sidebar ul li a {
+  text-decoration: none;
+  font-weight: 600;
+  color: #1e2b28;
+  font-size: 16px;
+  transition: color 0.3s;
+}
+
+.sidebar ul li a:hover {
+  color: #2c998c;
+}
+
+/* SECCIÓN PRINCIPAL */
+.main-material {
+  flex: 1;
+  padding: 50px;
+  background-color: #e6f4ef;
+  overflow-y: auto;
+}
+
+.main-material h1 {
+  font-size: 34px;
+  font-weight: 700;
+  color: #2c998c;
+  margin-bottom: 35px;
+}
+
+/* SECCIONES */
+section {
+  margin-bottom: 45px;
+}
+
+section h2 {
+  font-size: 24px;
+  color: #1e2b28;
+  margin-bottom: 15px;
+  font-weight: 600;
+}
+
+section p {
+  font-size: 17px;
+  line-height: 1.7;
+  color: #555;
+}
+
+/* VIDEOS */
+.videos ul {
+  padding-left: 20px;
+  list-style-type: square;
+}
+
+.videos li {
+  margin-bottom: 25px;
+}
+
+.videos iframe {
+  max-width: 100%;
+  height: 320px;
+  border-radius: 10px;
+  box-shadow: 0 4px 16px rgba(0,0,0,0.1);
+}
+
+/* GALERÍA DE IMÁGENES */
+.imagenes .galeria-imagenes {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 25px;
+}
+
+.imagenes .galeria-imagenes img {
+  width: 250px;
+  height: auto;
+  border-radius: 12px;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.08);
+  transition: transform 0.3s ease;
+}
+
+.imagenes .galeria-imagenes img:hover {
+  transform: scale(1.05);
+}
+
+/* ENLACES */
+.enlaces ul {
+  list-style: none;
+  padding-left: 20px;
+}
+
+.enlaces ul li {
+  margin-bottom: 12px;
+}
+
+.enlaces ul li a {
+  text-decoration: none;
+  color: #2c998c;
+  font-weight: 600;
+  transition: color 0.3s;
+}
+
+.enlaces ul li a:hover {
+  color: #ff5e5e;
+}
+
+/* BOTÓN SALIR */
+.salir {
+  position: absolute;
+  top: 20px;
+  right: 30px;
+  z-index: 1000;
+}
+
+.salirbtn {
+  padding: 10px 20px;
+  background-color: #ff5e5e;
+  color: white;
+  border: none;
+  border-radius: 10px;
+  cursor: pointer;
+  font-weight: bold;
+  transition: background-color 0.3s ease;
+}
+
+.salirbtn:hover {
+  background-color: #e04343;
+}

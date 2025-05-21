@@ -1,0 +1,105 @@
+.repaso-container {
+    display: flex;
+    height: 100vh;
+}
+
+.sidebar {
+    width: 200px;
+    background-color: #d3e0d6;
+    padding: 20px;
+}
+
+.logo-sidebar {
+    width: 100px;
+    margin-bottom: 20px;
+}
+
+.sidebar ul {
+    list-style: none;
+    padding: 0;
+}
+
+.sidebar ul li {
+    margin: 20px 0;
+}
+
+.sidebar ul li a {
+    text-decoration: none;
+    color: #000;
+    font-weight: bold;
+}
+
+.main-repaso {
+    flex: 1;
+    padding: 40px;
+    background-color: #e8f0ed;
+}
+
+.main-repaso h1 {
+    font-size: 32px;
+    font-weight: bold;
+    color: #2d7b8f;
+    margin-bottom: 30px;
+}
+
+.pregunta {
+    margin-bottom: 30px;
+}
+
+.pregunta h2 {
+    font-size: 24px;
+    color: #333;
+    margin-bottom: 20px;
+}
+
+.imagen-seña {
+    width: 300px;
+    height: auto;
+    margin-bottom: 20px;
+}
+
+.opciones {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+label {
+    font-size: 18px;
+}
+
+.btn-responder {
+    padding: 10px 20px;
+    background-color: #5e9b9f;
+    color: white;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    font-weight: bold;
+    margin-top: 20px;
+}
+
+.btn-responder:hover {
+    background-color: #468ea0;
+}
+
+.salir {
+    position: absolute;
+    top: 20px;
+    right: 20px;
+    z-index: 1000;
+}
+
+.salirbtn {
+    padding: 8px 16px;
+    background-color: #ff5e5e;
+    color: white;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    font-weight: bold;
+}
+
+.salirbtn:hover {
+    background-color: #e04e4e;
+}

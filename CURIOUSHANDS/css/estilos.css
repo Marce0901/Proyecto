@@ -1,0 +1,119 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap');
+
+body {
+  margin: 0;
+  font-family: 'Poppins', sans-serif;
+  background-color: #f0f8f6;
+  color: #333;
+}
+
+/* NAVBAR */
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 15px 40px;
+  background-color: #c3e8dd;
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+}
+
+.logo img {
+  height: 60px;
+}
+
+nav ul {
+  list-style: none;
+  display: flex;
+  gap: 30px;
+}
+
+nav ul li a {
+  text-decoration: none;
+  font-weight: 600;
+  font-size: 16px;
+  color: #1e2b28;
+  transition: color 0.3s ease;
+}
+
+nav ul li a:hover {
+  color: #2c998c;
+}
+
+/* BOTONES */
+.login-btn,
+.registro-btn {
+  background: #2c998c;
+  color: #fff;
+  padding: 10px 20px;
+  border-radius: 12px;
+  font-weight: bold;
+  font-size: 15px;
+  border: none;
+  cursor: pointer;
+  transition: background-color 0.3s ease, transform 0.2s ease;
+}
+
+.login-btn:hover,
+.registro-btn:hover {
+  background-color: #247a6f;
+  transform: scale(1.05);
+}
+
+/* LANDING */
+.landing {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 60px;
+  gap: 40px;
+}
+
+.text-content h4 {
+  color: #444;
+  margin-bottom: 10px;
+}
+
+.text-content h1 {
+  font-size: 48px;
+  font-weight: 700;
+  margin: 0;
+  color: #1e2b28;
+}
+
+.text-content h2 {
+  font-size: 26px;
+  color: #555;
+  margin-top: 10px;
+  margin-bottom: 25px;
+}
+
+.image-content img {
+  width: 400px;
+  border-radius: 25px;
+  box-shadow: 0 8px 25px rgba(0, 0, 0, 0.1);
+}
+
+/* TARJETAS DE NIVEL */
+.nivel-card {
+  background: #ffffff;
+  border-radius: 18px;
+  padding: 25px;
+  box-shadow: 0 4px 18px rgba(0, 0, 0, 0.08);
+  cursor: pointer;
+  transition: transform 0.25s ease;
+}
+
+.nivel-card:hover {
+  transform: scale(1.05);
+}
+
+/* ESTRELLAS DE PROGRESO */
+.estrella {
+  font-size: 26px;
+  color: #ccc;
+  transition: color 0.3s;
+}
+
+.estrella.activa {
+  color: #f5b301;
+}
